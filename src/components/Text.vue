@@ -51,6 +51,8 @@
 
 <!--  Multiple properties binding-->
   <div v-bind="properties">{{properties}}</div>
+
+
 </template>
 
 <style scoped>

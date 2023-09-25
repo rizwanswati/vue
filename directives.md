@@ -1,4 +1,5 @@
 # Vue.js Directives list
+Directive attribute values are expected to be single JavaScript expressions (with the exception of v-for, v-on and v-slot, which will be discussed in their respective sections later)
 
 ## 1: v-html
 this directive is used to pring raw html. however you cannot use this directive to compose
