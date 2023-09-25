@@ -18,7 +18,11 @@
     dataNumber:{
       required: true,
       type: String
-  }
+  },
+    disability:{
+      type: Boolean,
+      required: true
+    }
   })
 </script>
 
@@ -34,6 +38,10 @@
 
 <!--  Dynamic binding shorthand-->
   <div :itemid="dataNumber">dynamic binding shorthand :attr {{dataNumber}}</div>
+
+<!--  True or False attributes-->
+  <button :disabled="disability">Disabled</button>
+  <button :disabled="disability">Enabled</button>
 </template>
 
 <style scoped>
