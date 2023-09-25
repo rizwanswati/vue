@@ -10,6 +10,10 @@
     },
     rawhtml:{
       required: true
+    },
+    dynamicID:{
+      required: true,
+      type:String
     }
   })
 </script>
@@ -20,6 +24,10 @@
 
 <!--  give out raw html-->
   <h2>this is html <span v-html="rawhtml"></span></h2>
+
+
+<!--  attribute binding-->
+  <div v-bind:id="dynamicID">this contains a dynamic id</div>
 </template>
 
 <style scoped>
