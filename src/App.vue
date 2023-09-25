@@ -1,4 +1,6 @@
 <script setup>
+  import Attribinding from "@/components/Attribinding.vue";
+
   const ok = false
   const notOkay = true
   const msg = "if okay is true this message will be shown"
@@ -14,4 +16,6 @@
 
   <button v-on:click="doSomething">Click it</button>
   <div>{{text}}</div>
+
+  <Attribinding attr-name="href" url="www.google.com"></Attribinding>
 </template>
