@@ -17,5 +17,5 @@
   <button v-on:click="doSomething">Click it</button>
   <div>{{text}}</div>
 
-  <Attribinding attr-name="href" url="www.google.com"></Attribinding>
+  <Attribinding attr-name="href" url="www.google.com" event-name="focus"></Attribinding>
 </template>
