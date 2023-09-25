@@ -10,3 +10,6 @@ use this to bind attributes to any html element. this is a property
 
 ## 3: v-if:
 used for conditional rendering the element.reactive
+
+## v-on: / @eventName (shorthand)
+used for click handling or other event handling
