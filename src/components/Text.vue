@@ -18,12 +18,18 @@
     dataNumber:{
       required: true,
       type: String
-  },
+    },
     disability:{
       type: Boolean,
       required: true
-    }
+    },
   })
+  const properties = {
+    id: "test-101",
+    class: "container",
+    dataID: "10",
+    itemID: "05"
+  }
 </script>
 
 <template>
@@ -42,6 +48,9 @@
 <!--  True or False attributes-->
   <button :disabled="disability">Disabled</button>
   <button :disabled="disability">Enabled</button>
+
+<!--  Multiple properties binding-->
+  <div v-bind="properties">{{properties}}</div>
 </template>
 
 <style scoped>
