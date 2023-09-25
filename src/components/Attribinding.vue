@@ -1,24 +1,27 @@
 <script setup>
   defineProps(
       {
-        attrName:{
+        attrname:{
           type:String
         },
         url:{
           type:String
         },
-        eventName:{
+        eventname:{
           type:String
         }
       }
   )
+  function doSomething(){
+    console.log('focusing')
+  }
 </script>
 
 <template>
 <!--  both are same-->
-  <a v-bind:[attrName] = "url" target="_blank">Google</a>
-  <a :[attrName] = "url" target="_blank">Google</a>
-  <a v-on:[eventName] = "eventName" v-bind:[attrName] = "url">Facebook</a>
+  <a v-bind:[attrname] = "url" target="_blank">Google</a>
+  <a :[attrname] = "url" target="_blank">Google</a>
+  <a v-on:[eventname] = "doSomething" v-bind:[attrname] = "url">Facebook</a>
 </template>
 
 <style scoped>
