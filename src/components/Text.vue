@@ -14,7 +14,11 @@
     dynamicID:{
       required: true,
       type:String
-    }
+    },
+    dataNumber:{
+      required: true,
+      type: String
+  }
   })
 </script>
 
@@ -25,9 +29,11 @@
 <!--  give out raw html-->
   <h2>this is html <span v-html="rawhtml"></span></h2>
 
-
 <!--  attribute binding-->
-  <div v-bind:id="dynamicID">this contains a dynamic id</div>
+  <div v-bind:id="dynamicID">this contains a dynamic id {{dynamicID}}</div>
+
+<!--  Dynamic binding shorthand-->
+  <div :itemid="dataNumber">dynamic binding shorthand :attr {{dataNumber}}</div>
 </template>
 
 <style scoped>
