@@ -15,7 +15,7 @@ function increment() {
   <div>Simple</div>
   <button @click="count++">count</button>
   <div>{{count}}</div>
-
+  <br>
   <div>complex</div>
   <button @click="increment">increment</button>
   <div>{{count}}</div>
